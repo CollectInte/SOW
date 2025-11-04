@@ -1,0 +1,72 @@
+@media screen and (max-width: 1400px) {
+     .heading{
+        font-family:sans-serif;
+        text-align:center;
+        margin-top:15%;
+    }
+  .usernameinput {
+    width: 20%;
+    height: 30px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+  }
+  .passwordinput {
+    width: 20%;
+    height: 30px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+  }
+  .loginbutton{
+    width: 10%;
+    height: 35px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 900px) {
+       .heading{
+        font-family:sans-serif;
+        text-align:center;
+        margin-top:45%;
+        font-size: 50px;
+    }
+  .usernameinput {
+    width: 60%;
+    height: 50px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+  }
+  .passwordinput {
+    width: 60%;
+    height: 50px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+  }
+  .loginbutton{
+    width: 30%;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+}

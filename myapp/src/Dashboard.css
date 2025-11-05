@@ -1,0 +1,29 @@
+@media screen and (max-width: 1400px) {
+.row .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #007bff;
+    padding: 15px 0px;
+    font-family: sans-serif;
+}
+.usernav{
+    display: flex;
+    flex-direction: row;
+
+}
+.language {
+  display: flex;
+  align-items: end;
+}
+.languageselect{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+.productdisplay{
+    display: flex;
+}
+
+}

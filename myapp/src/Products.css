@@ -1,0 +1,25 @@
+@media screen and (max-width:1400px) {
+    .products{
+        display: flex;
+        width: 30%;
+    }
+    .menu{
+        font-family: sans-serif;
+        padding: 10px;
+        font-size: small;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .products{
+        display: flex;
+        width: 0%;
+    }
+    .menu{
+        font-family: sans-serif;
+        padding: 10px;
+        font-size: small;
+        visibility: hidden;
+    }
+}

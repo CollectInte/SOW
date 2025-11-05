@@ -12,6 +12,16 @@ app.use(bodyParser.json());
 app.use(cors());
 const port = 8000;
 
+// Get all Languages
+app.get('/languages', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT * FROM "Language" ORDER BY id ASC');
+    res.json(result.rows);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Get all articles
 app.get('/articles', async (req, res) => {
   try {

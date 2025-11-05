@@ -21,6 +21,8 @@ function App() {
       if(request.status===200){
         alert("Login Successful");
         localStorage.setItem("token",response.token);
+        setUsername("");
+        setPassword("");
       }else{
         alert(response.message || "Login Failed");
       }

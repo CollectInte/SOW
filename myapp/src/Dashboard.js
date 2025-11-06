@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Dashboard.css";
 import Products from "./Products";
+import ProductsDisplay from "./ProductsDisplay";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 const Dashboard = () => {
@@ -53,6 +54,7 @@ const Dashboard = () => {
       </div>
       <div className="productdisplay">
         <Products/>
+        <ProductsDisplay/>
       </div>
       
     </>

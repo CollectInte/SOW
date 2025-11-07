@@ -55,27 +55,28 @@ const ProductsDisplay = () => {
             <table width="95%">
               <thead>
                 <tr>
-                  <th className="tableheading">Article No</th>
-                  <th className="tableheading">Product Name</th>
-                  <th className="tableheading">In Price</th>
+                  <th className="tableheading optional-column">Article No</th>
+                  <th className="tableheading">Product/Service</th>
+                  <th className="tableheading optional-column">In Price</th>
                   <th className="tableheading">Price</th>
-                  <th className="tableheading">Unit</th>
-                  <th className="tableheading">Stock</th>
-                  <th className="tableheading">Description</th>
+                  <th className="tableheading mobile-column">Unit</th>
+                  <th className="tableheading mobile-column">InStock</th>
+                  <th className="tableheading optional-column">Description</th>
                 </tr>
               </thead>
               <tbody>
                 {products.map((product) => (
                   <tr
                     key={product.articleno}
+                    className="tablerow"
                   >
-                    <td className="tableitem"><button className="itembtn">{product.articleno}</button></td>
+                    <td className="tableitem optional-column"><button className="itembtn">{product.articleno}</button></td>
                     <td className="tableitem"><button className="itembtn">{product.product}</button></td>
-                    <td className="tableitem"><button className="itembtn">{product.inprice}</button></td>
+                    <td className="tableitem optional-column"><button className="itembtn">{product.inprice}</button></td>
                     <td className="tableitem"><button className="itembtn">{product.price}</button></td>
-                    <td className="tableitem"><button className="itembtn">{product.unit}</button></td>
-                    <td className="tableitem"><button className="itembtn">{product.instock}</button></td>
-                    <td className="tableitem"><button className="itembtn">{product.description}</button></td>
+                    <td className="tableitem mobile-column"><button className="itembtn">{product.unit}</button></td>
+                    <td className="tableitem mobile-column"><button className="itembtn">{product.instock}</button></td>
+                    <td className="tableitem optional-column"><button className="itembtn">{product.description}</button></td>
                   </tr>
                 ))}
               </tbody>

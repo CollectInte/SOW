@@ -7,15 +7,17 @@ import ArticleIcon from '@mui/icons-material/Article';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import FileCopyIcon from '@mui/icons-material/FileCopy';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { useTranslation } from 'react-i18next';
 
 const Products=()=>{
+    const { t } = useTranslation();
     return(
         <>
         <div className="products">
             <div className="menu">
                 <h4 className="text-center">Menu</h4>
                 <hr style={{ color: "#007bff", height: "2px", border: "none", backgroundColor: "#007bff" }} />
-                <p><DescriptionIcon/> Invoices</p>
+                <p><DescriptionIcon/> {t('Invoices')}</p>
                 <p><AccountCircleIcon/> Customers</p>
                 <p><SettingsIcon/> My Business</p>
                 <p><ArticleIcon/> Invoice Journal</p>

@@ -66,5 +66,132 @@
 }
 
 @media screen and (max-width:900px) {
-    
+        .productstable{
+        display: flex;
+        width: 100%;
+    }
+    .displayproducts{
+        width: 100%;
+        font-family: sans-serif;
+        font-size: small;
+        visibility: visible;
+    }
+    .searchdivision{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .searchbox{
+        margin-bottom: 10px;
+        padding: 5px;
+        font-family: sans-serif;
+        border-radius: 5px;
+        border-bottom:1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    .productbtns{
+        padding: 10px;
+    }
+    .addproductbtn{
+        padding: 5px;
+        font-family: sans-serif;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        border: none;
+        margin-right: 5px;
+    }
+    .producttable{
+        width: 95%;
+        max-height: 200px;
+        overflow-y: auto;
+    }
+    .tableheading{
+        width: auto;
+        font-weight: bold;
+        text-align: left;
+        padding: 3px;
+        font-family: sans-serif;
+    }
+    .tablerow{
+        height: 15px;
+    }
+    .tableitem{
+        width: auto;
+        text-align: left;
+        font-family: sans-serif;
+        font-size: 10px;
+        padding: 3px;
+    }
+    .itembtn{
+        text-align: left;
+        padding: 5px;
+        font-family: sans-serif;
+        background-color: white;
+        color: black;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    .optional-column {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 576px) {
+    .searchdivision{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    .searchbox{
+        width: 90%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-family: sans-serif;
+        border-radius: 5px;
+        border-bottom:1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    .productbtns{
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .addproductbtn{
+        padding: 5px;
+        font-family: sans-serif;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        border: none;
+        margin-right: 5px;
+    }
+    .optional-column {
+    display: none;
+  }
+  .producttable {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .tableheading,
+  .tableitem {
+    width: auto; /* Resets any set widths */
+    font-size: 12px; /* Slightly larger for readability */
+    padding: 2px 4px;
+  }
+  .itembtn {
+    min-width: 0;
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+    .mobile-column{
+    visibility: hidden;
+    }
 }
